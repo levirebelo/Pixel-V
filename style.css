@@ -427,7 +427,7 @@ footer img {
     height: 90px;
 }
 
-footer.container-grid {
+footer .container-grid {
     height: 100%;
 
     display: flex;
@@ -435,7 +435,7 @@ footer.container-grid {
     align-items: center;
 }
 
-.redes-sociais{
+.redes-sociais {
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -443,7 +443,7 @@ footer.container-grid {
     align-items: flex-end;
 }
 
-.redes-sociais p{
+.redes-sociais p {
     color: var(--branco);
 
     font-family: "Recursive", sans-linear;
@@ -457,10 +457,159 @@ footer.container-grid {
     justify-content: space-between;
 }
 
-.icones-redes a{
+.icones-redes a {
     color: var(--branco);
 }
 
-.icones-redes a:hover{
+.icones-redes a:hover {
     color: var(--verde-pixelV);
+}
+
+/*------------------ Menu hamburguer---------------- */
+
+.menu-fechado {
+    display: none;
+}
+
+#icone-barras,
+#icones-x {
+    display: none;
+}
+
+
+
+
+
+
+/*-----------Responsividade----------------*/
+@media screen and(max-width: 1024px) {
+
+    .titulo,
+    .titulo h2 {
+        font-size: 22px;
+        font-family: "Recursive", sans-linear
+    }
+
+    .titulo span {
+        line-height: 45px;
+    }
+
+    .menu {
+        justify-content: space-evenly;
+    }
+
+    #sobre p {
+        font-size: 16px;
+
+    }
+
+    #servicos .card svg {
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
+    header button {
+        width: 50px;
+
+        background: none;
+        border: none;
+
+        cursor: pointer;
+        display: unset;
+    }
+
+    header svg {
+        fill: var(--branco);
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+
+        background-color: var(--preto);
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+
+        z-index: 1;
+
+    }
+
+    .conteudo-banner img {
+        display: none;
+    }
+
+    .conteudo-banner img {
+        justify-content: center;
+    }
+
+    #sobre img {
+        display: none;
+    }
+
+    .titulo {
+        justify-content: center;
+    }
+
+    #cases img {
+        height: 200px;
+    }
+
+    footer .roda-pe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    footer img {
+        height: 80px;
+    }
+
+    .redes-sociais {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .redes-sociais svg {
+        height: 35px;
+    }
+
+}
+
+@media screen and(max-width: 320px) {
+    nav.menu {
+        width: 260px;
+
+    }
+
+    header img {
+        width: 185px;
+    }
+
+    .conteudo-banner p {
+        font-size: 24px;
+        width: 310px;
+    }
+
+    .conteudo-banner ul {
+        font-size: 25px;
+    }
+.titulo,
+.titulo h2{
+    font-size: 20px;
+}
 }
